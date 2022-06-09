@@ -1,18 +1,15 @@
-## Getting Started
+## Zwielicht_OOP_FinalProject
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The repository containing the code for the Object Oriented Programming (OOP) Final Project
 
-## Folder Structure
+## Student Info
 
-The workspace contains two folders by default, where:
+Full Name   : Rachel Anastasia Wijaya
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Student ID  : 2502009646
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The video demo for the project can be found here:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+The report for the project can be found in the docs folder or by following the link below:
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+https://docs.google.com/document/d/1TeSZlvGT6ygDFnSso_68IfCqAvCvAyNxLwf1WHiFLck/edit?usp=sharing
