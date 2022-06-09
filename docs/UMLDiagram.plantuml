@@ -1,0 +1,379 @@
+@startuml Test
+title Zwielicht Class Diagram
+skinparam linetype ortho
+
+together group1{
+    class Thing
+    class ThingHolder
+    class Actor
+    class Room
+}
+
+together group2{
+    class HelpMethods
+    class TextParser
+    enum Directions
+
+    class Dialogue
+}
+
+
+ReadFile ..> Thing :creates
+Zwielicht -[hidden]- AdventureGame
+group2 -[hidden]-AdventureGame
+AdventureGame -[hidden]- ThingHolder
+ Actor "1..*"-* AdventureGame
+ Room "1..*"-* AdventureGame
+ Dialogue "0..*"-* AdventureGame 
+ HelpMethods .> AdventureGame
+ HelpMethods ..> ReadFile
+ HelpMethods .> Zwielicht
+ TextParser .> AdventureGame
+ TextParser .> Zwielicht
+ AdventureGame "1" -*  Zwielicht
+ Directions - AdventureGame
+ ReadFile ..> AdventureGame :creates 
+ Room <. ReadFile :creates
+ Actor <... ReadFile :creates
+ Room o- Actor 
+
+
+class Thing implements java.io.Serializable{
+    --private data--
+    -name : String 
+    -description : String
+    -examination : String
+    -isPickupable : boolean 
+    -isKeyItem : boolean
+    -location : int
+    -aliases : ArrayList<String> 
+    --constructors--
+    +Thing(aName : String, aDescription : String, 
+    examination : String)
+
+    +Thing(aName : String, aDescription : String, 
+    examination : String, aliases : ArrayList<String>)
+
+    +Thing(aName : String, aDescription : String, 
+    examination : String, location : int, 
+    aliases : ArrayList<String>)
+
+    +Thing(aName : String, aDescription : String, 
+    location : int, aliases : ArrayList<String>, 
+    isPickupable : boolean, isKeyItem : boolean)
+    --setters--
+    +setName(name : String) : void
+    +setLocation(int aLocation) : void
+    +setDescription(description : String ) : void
+    +setExamination(examination : String ) : void
+    +addAlias(alias : String) : void
+    +setThingPickupability(isPickupable : boolean) : void
+    --getters--
+    +getName() : String 
+    +getDescription() : String 
+    +getExamination() : String 
+    +getAliases() : ArrayList<String>
+    +isThingPickupable() : boolean
+    +isThingKey() : boolean
+    +getLocation() : int
+}
+
+class ThingHolder extends Thing{
+    -things : ArrayList<Thing>
+    --constructors--
+    +ThingHolder(aName : aName, aDescription : String, 
+    anExamination : String, tl : ArrayList<Thing>)
+
+    +ThingHolder(aName : aName, aDescription : String, 
+    anExamination : String, aliases : ArrayList<String>, 
+    tl : ArrayList<Thing>)
+
+    +ThingHolder(aName : aName, aDescription : String, 
+    anExamination : String, int location,
+    aliases : ArrayList<String>, tl : ArrayList<Thing>)
+    --setter and getter--
+    +setThings(things : ArrayList<Thing>) : void
+    +getThings() : ArrayList<Thing>
+}
+
+class Actor extends ThingHolder{
+    --private data--
+    -anger : BigDecimal 
+    -fear : BigDecimal 
+    -relation : BigDecimal 
+    -happiness : BigDecimal 
+    -angerTendency : BigDecimal 
+    -fearTendency : BigDecimal  
+    -relationTendency : BigDecimal 
+    -happinessTendency : BigDecimal 
+    -angerTrigger : BigDecimal 
+    -fearTrigger : BigDecimal  
+    -relationTrigger : BigDecimal 
+    -happinessTrigger : BigDecimal 
+    -room : Room
+    -inDialogueWith : String
+    -inDialogueResponses : ArrayList<String>
+    -boolean isInDialogue
+    -Map<Room, Integer> roomVisits
+    --constructors--
+    +Actor(aName : String, aDescription : String, 
+    anExamination : String, aRoom : Room, 
+    aliases : ArrayList<String>, tl : ArrayList<Thing>, 
+    isInDialogue : boolean, inDialogueWith : String)
+
+    +Actor(String aName, String aDescription, 
+    String anExamination, Room aRoom, int location, 
+    ArrayList<String> aliases, ArrayList<Thing> tl, 
+    anger : BigDecimal, fear : BigDecimal, 
+    relation : BigDecimal, happiness : BigDecimal, 
+    angerTendency : BigDecimal, fearTendency : BigDecimal, 
+    relationTendency : BigDecimal, happinessTendency : BigDecimal, 
+    ArrayList<String> inDialogueResponses, 
+    BigDecimal angerTrigger, BigDecimal fearTrigger, 
+    BigDecimal relationTrigger, BigDecimal happinessTrigger)
+    --setters--
+    +setRoom(aRoom : Room) : void
+    +setAnger(anger : BigDecimal) : void
+    +setFear(fear : BigDecimal) : void
+    +setRelation(relation : BigDecimal) : void
+    +setHappiness(happiness : BigDecimal) : void
+    +setAngerTendency(angerTendency : BigDecimal) : void
+    +setFearTendency(fearTendency : BigDecimal) : void
+    +setRelationTendency(relationTendency : BigDecimal) : void
+    +setHappinessTendency(happinessTendency : BigDecimal) : void
+    +calculateAnger(angerChange : BigDecimal) : void
+    +calculateFear(fearChange : BigDecimal) : void
+    +calculateRelation(relationChange : BigDecimal) : void
+    +calculateHappiness(happinessChange : BigDecimal) : void
+    +calculateAllAttributes(angerChange : BigDecimal, 
+    fearChange : BigDecimal, relationChange : BigDecimal, 
+    happinessChange : BigDecimal) : void
+    +setAngerTrigger(angerTrigger : BigDecimal) : void
+    +setFearTrigger(fearTrigger : BigDecimal) : void
+    +setRelationTrigger(relationTrigger : BigDecimal) : void
+    +setHappinessTrigger(happinessTrigger : BigDecimal) : void
+    +setIfActorIsInDialogue(isInDialogue : boolean) : void
+    +setWhoActorInDialogueWith(aName : String) : void
+    +addRoomAndVisits(aRoom : Room, numVisits : int) : void
+    +addVisit(Room aRoom) : void
+    --getters--
+    +getRoom() : Room
+    +getAnger() : BigDecimal
+    +getFear() : BigDecimal
+    +getRelation() : BigDecimal
+    +getHappiness() : BigDecimal
+    +getAngerTendency() : BigDecimal
+    +getFearTendency() : BigDecimal
+    +getRelationTendency() : BigDecimal
+    +getHappinessTendency() : BigDecimal
+    +getAngerTrigger() : BigDecimal
+    +getFearTrigger() : BigDecimal
+    +getRelationTrigger() : BigDecimal
+    +getHappinessTrigger() : BigDecimal
+    +isActorInDialogue() : boolean
+    +getExamineResponse() : String
+    +getMoveResponse() : String
+    +getTakeResponse() : String
+    +getDropResponse() : String
+    +getWhoActorInDialogueWith() : String
+    +getSpecificRoomVisits() : int
+    --other methods--
+    +toString() : String
+    +printNPCCurrentAttributes() : void
+}
+
+class Room extends ThingHolder{
+    --private data--
+    -north : int 
+    -south : int 
+    -east : int
+    -west : int
+    -isDialogueFinished : boolean
+    -roomNPCs : ArrayList<Actor>
+    --constructors--
+    +Room(aName : String, aDescription : String, 
+    anExamination : String, n : int, s : int,
+    e : int, w : int, tl : ArrayList<Thing>)
+
+    +Room(aName : String, aDescription : String, 
+    anExamination : String, n : int, s : int,
+    e : int, w : int, tl : ArrayList<Thing>,
+    roomNPCs : ArrayList<Actor>)
+    --setters--
+    +setNorth(n : int) : void
+    +setSouth(s : int) : void
+    +setEast(e : int) : void
+    +setWest(w : int) : void
+    +setRoomNPCs(roomNPCs : ArrayList<Actor>) : void
+    +setIfDialogueIsFinished(check : boolean) : void
+    --getters--
+    +getNorth() : int
+    +getSouth() : int
+    +getEast() : int
+    +getWest() : int
+    +getRoomNPCs() : ArrayList<Actor>
+    +getNPC() : Actor
+    +getNPCNames() : ArrayList<String>
+    +getIfDialogueIsFinished() : boolean
+}
+
+class Dialogue implements java.io.Serializable{
+    --private data--
+    -isText : boolean
+    -nextDialogueLine : ArrayList<String>
+    -dialogue : String
+    -angerChange : BigDecimal
+    -fearChange : BigDecimal
+    -relationChange : BigDecimal
+    -happinessChange : BigDecimal
+    --constructors--
+    +Dialogue()
+    --setters--
+    +setnextDialogueLine(nextDialogueLine : ArrayList<String>) : void
+    +setDialogueText(dialogue : String) : void
+    +setAngerChange(angerChange : BigDecimal) : void
+    +setFearChange(fearChange : BigDecimal) : void
+    +setRelationChange(relationChange : BigDecimal) : void
+    +setHappinessChange(happinessChange : BigDecimal) : void
+    --getters--
+    +getNextDialogueLine() : ArrayList<String> 
+    +getFirstNextDialogue() : int
+    +getDialogueText() : String
+    +getAngerChange() : BigDecimal 
+    +getFearChange() : BigDecimal 
+    +getRelationChange() : BigDecimal 
+    +getHappinessChange() : BigDecimal
+}
+
+class HelpMethods <<utility>>{
+    -HelpMethods()
+    +{static} capitalizeString(lower : String) : String
+    +{static} typewriterEffect(word : String) : void
+    +{static} isNumeric(aString : String) : boolean
+    +{static} describeThings(tl : ArrayList<Thing>) : String
+    +{static} allThingNamesList(tl : ArrayList<Thing>) : ArrayList<String>
+    +{static} thisThing(aName : String, tl : ArrayList<Thing>) :Thing
+}
+
+class ReadFile <<utility>>{
+    -ReadFile()
+    +{static} printFile(pathName : String) : void
+    +{static} fileToString(pathName : String) : String
+    +{static} createItems(pathName : String) : ArrayList<Thing>
+    +{static} createRoomNPCs(aRoom : Room, itemsPathName : String, 
+     {static} charactersPathName : String) : ArrayList<Actor>
+    +{static} createRooms(itemsPathName : String, roomsPathName : String, 
+     {static} charactersPathName : String) : ArrayList<Room>
+    +{static} getSpecificLine(lineNum : int, fileName : String) : String
+    +{static} splitLineByAtSymbol(line : String) : ArrayList<String>
+    +{static} splitLineByCommas(line : ArrayList<String>, 
+     {static} position : int) : ArrayList<String>
+}
+
+class TextParser <<utility>>{
+    -TextParser()
+    +{static} FilterDelims(input : String) : String
+    +{static} parseInput(userInput : String) : List<String>
+    +{static} isNumberChoiceValid(input : String) : boolean
+    +{static} isInputPositiveInteger(input : String) : boolean
+    +{static} processInput(input : String) : List<String>
+}   
+
+enum Directions{
+    NORTH
+    SOUTH
+    EAST
+    WEST
+    +{static}NOEXIT
+}
+
+class AdventureGame implements java.io.Serializable {
+    -map : ArrayList<Room>
+    -allItems : ArrayList<Thing>
+    -roomNames : ArrayList<String>
+    -allItemNames : ArrayList<String>
+    -allNPCNames : ArrayList<String>
+    -player : Actor
+    -nextDialogueList : ArrayList<Integer>
+    -listOfChoices : ArrayList<Dialogue>
+    -playerVisits : HashMap<Room, Integer>
+    -isSpecialActionTriggered : int
+    -timesSpecialActionWasTriggered : int
+    -commands : List<String>
+    -directions : List<String>
+    -miscNouns : List<String>
+    --constructor--
+    +AdventureGame()
+    --about and commands--
+    -showAbout() : void
+    -showCommands() : void
+    --dialogue system--
+    -addDialogueAttributeChanges(aDialogue : Dialogue, 
+    attributeLine : ArrayList<String>) : void
+    -processAttributeChange(dialogueOptionIndex : int) : void
+    +startDialogue(actorName : String, fileName : String) : void
+    +endDialogue() : void
+    +getDialogues(aLine : String) : ArrayList<Dialogue>
+    +processActorScene(count : int, fileName : String, 
+    anActor : Actor) : void
+    --NPC special actions--
+    +checkForActorSpecialActions(Actor anActor) : int
+    -processActorSpecialActions(typeOfSpecialAction : int,
+    anActor : Actor) : void
+    --examining, taking, and dropping items--
+    +examineItem(itemName : String) : String
+    --taking and dropping items--
+    -transferItem(aThing : Thing, fromList : ArrayList<Thing>,
+    toList : ArrayList<Thing>) : void
+    -showInventory(anActor : Actor) : void
+    +takeItem(itemName : String) : String
+    +dropItem(itemName : String) : String
+    --movement--
+    -goN() : void
+    -goS() : void
+    -goE() : void
+    -goW() : void
+    -moveHandler(roomNumber : int) : void
+    +moveTo(anActor : Actor, aDirection : Direction) : int
+    +moveActorTo(Actor anActor, Room aRoom) : void
+    +movePlayerTo(dir : Direction) : int
+    --setters and getters--
+    +getPlayer() : Actor
+    +getActiveRoom() : Room
+    +getActiveDialogueNPC() : Actor
+    +getAllRoomNames() : ArrayList<String>
+    +getAllNPCNames() : ArrayList<String>
+    +getNextDialogueList() : ArrayList<Integer>
+    +getADialogueOption(index : int) : Dialogue
+    +setRoomVisitMap() : void
+    --processing input--
+    +processVerb(List<String> : wordlist) : String
+    +processVerbNoun(List<String> : wordlist) : String
+    +runCommand(List<String> : inputstr) : String
+}
+
+class Zwielicht <<static>>{
+    -{static} myDateFormatter : DateTimeFormatter
+    -{static} in : BufferedReader
+    +{static} game : AdventureGame
+    -{static} checkSaveExists(playerName : String, saveName : String) : boolean
+    -{static} checkFolderExists(playerName : String) : boolean
+    -{static} lowerTrim(word : String) : String
+    -{static} getLastTimeFileModified(playerName : String, saveName : String) : String
+    -{static} currentDateTime() : String
+    -{static} saveAdventureGame(playerName : String, saveName : String) : void
+    -{static} loadAdventureGame(playerName : String, saveName : String) : void
+    -{static} deleteSave(playerName : String, saveName : String) : void
+    +processSave() : boolean
+    +ifSaveExists(playerName : String, saveName : String, checkFile : boolean) : void
+    +processLoad() : boolean
+    +ifLoadExists(playerName : String, saveName : String, checkFile : boolean) : void
+    +processDelete() : boolean
+    +ifDeleteExists(playerName : String, saveName : String, checkFile : boolean) : void
+    +showIntro() : void
+}
+
+
+
+
+@enduml
