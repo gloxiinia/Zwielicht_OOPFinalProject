@@ -1,0 +1,89 @@
+text@"You know, when I said "feel free to visit me whenever", I didn't mean it literally."@2,28,31
+option@"C'mon, you should know me better by now, El."@-1,0,1,-1@3
+text@You hear him scoff. After a few more seconds of scribbling and a final flourish of@4 
+text@his signature, he sets down his pen and finally graces you with his full attention.@5
+text@"So, what is it you're in need of this time?"@6,24
+option@"Can't a friend just visit for the sake of it? I thought you'd be bored, cooped up all day in this stuffy office."@-1,-1,2,2@7 
+text@"Yes, while I appreciate the sentiment, might I remind you this "stuffy" office@8
+text@has a nice garden, for when I need a break."@9
+text@"You actually take breaks now?" You raise an eyebrow, incredulous.@10
+text@El fiddles with his cuff-links, something to focus on other than your expectant gaze.@11
+text@When he eventually replies, his eyes are just the slightest bit downcast and his eyebrows pinched.@12
+text@"Not as often as I'd want, no."@13
+text@"I see," is all you can reply with.@14
+text@As if sensing the awkward silence left from that topic of conversation, Edelmar tries for another angle.@15
+text@"Huginn's awfully quiet today, isn't he?"@16,21
+option@"I told him to behave, lest we start another apocalypse."@-1,0,3,2@17,21
+text@He hums thoughtfully, running his ungloved hand across the fur of the great wolf beside him.@18
+text@After some brief, conspiratorial whispers between the pair, he breaks into a quiet laugh.@19
+text@"How very kind of you, if only it was to save your own hide," he says with a quirk of his lips.@81
+text@"So, any other reason for this visit?"@25
+option@"Quiet? For you, maybe. Inside my head are a million thoughts and phrases he just wants to let loose."@0,0,1,-1@22
+text@You wouldn't call the expression that flits El's face concern, it's more of pity. Of what, you don't really know.@23
+text@He schools his expression back to his usual level of glacial and asks:@20
+option@"If anything, I think you're the one in need of this information."@0,0,0,0@25
+text@"Sibyl found it."@26
+text@"You jest."@27
+text@"I wouldn't. Not about this, anyway."@-1
+option@"Yes, I know, but this matter seemed important enough."@0,0,0,0@29
+text@He sets down his pen and faces you, hands steepled.@30
+text@"So, what's this "important" matter you speak of?"@25
+option@"Obviously you didn't mean that literally."@2,-2,-1,-2@32
+text@"Yes, well if it was so obvious, why do you insist on barging in while I'm clearly working?"@33
+text@He's still going through the documents piled high on the edge of his desk, not looking up.@34 
+text@There's a certain rhythmic, machine-like quality to how he reads, signs, and stores them.@35
+text@Skim, sign, store. Rinse and repeat. Sometimes, like an off-beat note, you can see the rhythym falter.@40
+text@Upon further inspection, the cracks show clearer.@37
+text@His hands tremble with every stroke of ink on paper.@38
+text@Dark circles under his eyes concealed hastily with makeup. Each breath seems shallow and weighty.@39
+text@Like someone pulling an all-nighter to catch up with a morning deadline.@40
+text@But, as entrancing as the paperwork is, you don't really want to linger here.@41
+text@Probably better to get this done and over with ASAP.@42,45
+option@"I have information on *that* case you asked Sibyl to look into."@0,0,0,0@43
+text@That finally catches his full attention.@44
+text@He instructs Fenrir to retrieve a book from the adjoining library, he looks back at you, anticipating more.@25 
+option@"Honestly, why can't you loosen up a little sometimes?"@1,0,1,-2@46
+text@"Forgive me for trying to keep everything running smoothly," he retorts, each word laced with distinct annoyance.@47 
+text@Even now his focus is solely intended towards going through the now rapidly decreasing stack of papers.@48
+text@"Everything won't fall apart if you take a little break now and then."@49
+text@"Who said I didn't take breaks?" Still writing, writing, writing.@50
+text@"Esther. She said you looked ready to pass out last time she saw you."@51
+text@"For Odin's sake, not this again," he huffs under his breath, miffed.@52
+text@Promptly, and with an added wave of his free hand, he says, "She's prone to over-exaggeration and dramatics."@53
+text@"No, I think she's right." You see him ready a retort, but before that: @54
+text@"Clearly, if you think everything's gonna fall to bits if you're not working and monitoring everything and everyone 24/7.@55
+text@We're all still shaken up, but I know you know that overworking won't help matters.@56
+text@In one last ditch attempt, you bring up dear Esther.@57
+text@"El, please, for Est's sake if not yours. Just think about it befo-"@58
+text@Before you can say anything else, Edelmar swiftly cuts back in a tone you've heard almost daily during your first years working here.@59
+text@"Enough. I tire of our squabbling. Tell me about this important matter you spoke of now." And the writing stops at long last.@60
+text@Still gripping his pen like a vise, now you bear the full brunt of his scrutiny.@61
+text@(I think I saw his eye twitch, you sure you don't wanna back out from this?)@62
+text@You still have that message to relay. But, maybe it's better to let Sibyl tell it herself later. She'll understand. Probably.@63
+text@(To be honest, I don't think the guy's gonna listen to anything else you say, pal)@64
+text@Even without Huginn's insight, you're pretty sure you get the message.@42,65
+option@"Actually, I changed my mind. I think you'd be better off asking Sibyl on this. I have better things to do."@3,-2,-3,-2@66
+text@"Honestly, you act like such a child."@67
+text@"Technically, I still am, back in Jotunheim."@68
+text@(Hey, hey, HEY, buddy, don't rile him up further! He's already pissed off enough as is! Do you WANT to get your ass kicked?)@69
+text@"Yes, because technicalities are what wins arguments," he counters, with an eye-roll to boot.@70
+text@Though he isn't one for fits of rage, you can sense the uneasy storm brewing in the air.@71
+text@Like a tsunami, you think. Edelmar's wrath climbs slow and steady.@72
+text@When the wave crests on the horizon, it's already too late.@73
+text@"Have it your way then. Out, now."@74
+text@You're a bit taken aback. It's odd he let you off this easily."@75
+text@(This is good, don't push your luck, he almost sicced that wolf on you for messing up that one time in Melbourne.)@76
+text@"Alright then."@77,78,79
+option@"I apologize for the intrusion. I'll take my leave now."@0,0,0,0@80
+option@(Say nothing)@0,0,0,0@80
+option@"You know where to find Sibyl. I'll tell her to expect you in her office."@0,0,0,0@80
+text@And with that, you leave Edelmar's office.@-1
+option@"Hey, is it so bad to not want to burn to death? Putting out Muspelheim fire is an experience I never wanna relive."@-1,0,2,2@82
+text@"Point taken. Though, I do seem to vividly recall a certain someone, knee-deep in a pool of soot and viscera exclaiming,@83
+text@and I quote: "You can shove that nasty nail ship back up your lifeless-"@84
+text@And that's when you decide, no, I'm not ready to hear El curse today."In my defense, Sibyl started it first."@85
+text@(Of course you fixate on that, not the fact that it was a life or death situation)@86
+text@"Oh yes, the two of you were absolutely insufferable-and of no help-back then."@87
+text@Though his words say otherwise, there's an uncharacteristic grin plastered on El's face right now.@88
+text@(Shoulda brought your camera, Esther would never believe you)@20
+option@"As fun as this is, there's something Sibyl told me to tell you."@0,0,0,0@25
