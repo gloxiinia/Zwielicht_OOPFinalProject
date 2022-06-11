@@ -1,0 +1,79 @@
+book on mythology
+1
+open book,mythology book,myth book,book about mythology,book about myths
+true
+false
+A fairly thick book on the various mythos around the world. It's open and 
+looks recently read.
+The page was opened on the section regarding Greek and Roman myths.
+there are highlights on the page about Apollo.
+END
+hunting dagger
+1
+dagger,old dagger,el's dagger,voigt dagger,deer-catcher,hirschfaenger
+false
+true
+An old-looking, but well-kept hunting dagger gifted to you by Edelmar. 
+(It's called a Hirschfänger, deer catcher, if you will. Nobles love their fancy hunts, 
+makes sense El's family would own one of these lovely specimens.) The scabbard it comes in 
+exudes the aura of being expensive. For a dagger, it has a fair bit of reach, might be a 
+new addition to your arsenal after all. Though, the handle's a bit flashy for your tastes. 
+END
+pocketwatch
+1
+watch,old watch
+false
+false
+Edelmar's watch. You'll often catch him checking the time with it.
+An old pocketwatch owned by the Engel family. Passed on from generation
+to generation. Now in Edelmar's possession.
+END
+fountain pen
+1
+pen, old pen, olf fashioned pen, fancy pen
+false
+false
+An elegant fountain pen found in Edelmar's office.
+Upon closer inspection, you can see his initials engraved on the side.
+E.V. Edelmar Voigt.
+END
+dog bed
+1
+dog mat,fluffy mat,fluffy bed,fluffy mat and bed,soft bed,fluffy dog bed,fluffy dog mat
+false
+false
+It's Fenrir's dog bed. Comfortable and lavish. Edelmar really doesn't spare any expense.
+It's got rips here and there, looks well worn. (I think that gives it character don't
+you think?)
+END
+display case
+1
+display cases,weapon cases,weapon case,weapon display
+false
+false
+You're slightly baffled with the amount of frankly, lethal weapons on display here. On 
+the other hand, considering who owns this place, it's not that shocking anymore. Front 
+and center, there lies the famed Gleipnir. Said to have chained Fenrir-
+(The one sitting right there, I might add, so I'd advise against doing anything rash)
+-until the end of the gods. Really, picturing the (fairly) docile wolf nestled in the corner
+as a devourer of gods.
+
+(Edelmar says Gleipnir stays displayed as a reminder for everyone working here).
+
+Other than the two Huginn's pointed out, you can see even more intriguing death-dealing
+instruments. Beside the morning star, there's an oddly curved blade that's knife-sized. 
+(That one's a Kukri, ever heard of it?) Up above (HOW DID YOU NOT SEE THIS IMMEDIATELY?), 
+a mounted scythe, with an expertly carved handle that looked painstaking to create.
+END
+portrait of a noble
+0
+oil painting,painting of a noble,noble painting,painting of a noblewoman,noblewoman painting
+false
+false
+A painting of an ancient looking noblewoman. Seems like it's one of Edelmar's ancestors.
+She certainly looks like him, anyways. If the green eyes and  didn't give it away, then the 
+insignia on her lapel--bearing the Voigt family coat of arms--clearly do.
+END
+ENDOFFILE
+
+

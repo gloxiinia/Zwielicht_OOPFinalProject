@@ -1,0 +1,29 @@
+Edelmar
+1
+edel,el
+pocketwatch,fountain pen,hunting dagger
+Heir to the Voigt family. He's been part of this organization for around 8 years.
+Quite a while, compared to you. Promoted to overseer of this branch 3 years ago. 
+With glares people say is as frigid as Fimbulvetr, he's known to be difficult to 
+approach, let alone make conversation with. (But that doesn't stop some)
+
+Right now, he just looks tired.
+ATTRIBUTES
+6,5,4,4
+0.25,-0.50,0.75,-0.50
+"Honestly, you are in a conversation, please focus."@"Really now, you're trying to leave in the middle of a conversation?"@"Put that back, stop acting like a child."@"Pick that back up, quickly please."
+7.5,1.5,8,8
+EXAMINE
+Upon closer inspection, the cracks in the glass show clearer. 
+
+His hands tremble with every stroke of ink on paper. Dark circles under his eyes 
+concealed hastily with makeup. Each breath seems shallow and weighty. Like someone pulling an 
+all-nighter to catch up with a morning deadline.
+END
+ENDOFFILE
+
+
+
+
+
+

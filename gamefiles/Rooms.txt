@@ -1,0 +1,95 @@
+West Hallway
+0
+4,5,7,1
+The west hallway of the estate. The tiles are practically seared into my brain
+with how many times you've had to come to *his* office.
+EXAMINE
+To the north are the restrooms. To the south... someone's office. To the east 
+is back to the central hall, and west is.. well. Edelmar's office.
+END
+Edelmar's Office
+1
+2,3,0,-1
+The office/second home of Edelmar Voigt. It's cozy, large enough to be a studio apartment.
+At the very least, the place is warm and inviting, even if its owner isn't always so. You 
+can see an exit out *north* towards a private garden. To the south, there's a library. (It's
+supposed to be secret, but I personally think Edelmar's tired of people sneaking in when he's
+not here.)
+
+EXAMINE
+There are *display cases* filled with various weapons you do not know the names of.
+(That one's called a morning star, that funky looking one's a sword catcher. Guess
+what it does!) To the corner, you see a *fluffy mat and bed*. Fenrir sits on it, content,
+awaiting the occasional pet from his contractee.
+END
+Private Garden
+3
+-1,1,-1,-1
+A private (debatable) garden connected to Edelmar's office. He grows some interesting things here. 
+(I think I saw orchids blooming next to an actual corpse flower)
+
+EXAMINE
+The only exit here is back into Edel's office.
+END
+Edelmar's Private Quarters
+2
+1,-1,-1,-1
+It's Edelmar's rooms. You probably shouldn't be here honestly.
+(But he has the best books and tomes in here!)
+That's true. With the shelves and books stacked everywhere, it's like a mini library.
+
+EXAMINE
+The only exit here is back into the office.
+END
+West Restrooms
+4
+-1,0,-1,-1
+The west restrooms. What more is there to say?
+
+EXAMINE
+Only exit's back into the hallway.
+END
+Someone's Office
+5
+0,-1,-1,-1
+It's an office, for someone you don't know... Maybe you shouldn't be in here.
+(Never stopped you before though)
+
+EXAMINE
+There's noone here. Exit goes back to the hallway.
+END
+Public Library
+6
+-1,7,-1,-1
+The estate's pride and joy. Housing seemingly all printed media ever made. It's no
+wonder there's always someone coming and going from here.
+
+EXAMINE
+There's an exit back into the hallway.
+END
+Central Hall
+7
+6,8,9,0
+The central hall. Not unlike a sort of hub for the other employees.
+
+EXAMINE
+You can head into the west hallway or east hallway. To the south is the dining hall
+and to the north is the public library. 
+END
+Dining Hall
+8
+7,-1,-1,-1
+Communal dining hall. There's the smell of something spicy.
+
+EXAMINE
+You can head back into the hallway by going north.
+END
+East Hallway
+9
+-1,-1,-1,7
+The east hallway. If you'd followed the path, you'd end up in the east wing.
+
+EXAMINE
+You can head east to the central hall.
+END
+ENDOFFILE

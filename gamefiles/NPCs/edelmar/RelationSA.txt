@@ -1,0 +1,15 @@
+"Ah, before I forget again. I've been meaning to gift you this since your last successful mission."
+
+El moves towards one of the larger display cabinets and procures an elegant bladed weapon.
+
+"A hunting dagger, I believe it was my brother's." He looks a bit wistful, saying that.
+
+"I would be remiss to not acknowledge your capabilities. I trust you'll show this beauty her fair share of battle."
+
+As he hands the dagger to you, he adds: 
+
+"Of course, I also thank you. For being a friend."
+
+You've received a hunting dagger from Edelmar. Check your inventory for a closer look.
+
+ENDOFFILE

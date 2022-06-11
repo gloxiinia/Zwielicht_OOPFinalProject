@@ -1,0 +1,7 @@
+Welcome to a demo of Zwielicht, a parser game, where you type in phrases and words that will determine
+the in-game character's actions. All actions are NOT case sensitive.
+There is one available character dialogue interaction, to the WEST of the starting area.
+Once you start the encounter, you won't be able to explore until it's finished, so explore around
+a bit first if you'd like (or not, whatever floats your boat, player).
+For a list of standard commands, type COMMANDS.
+ENDOFFILE

@@ -1,0 +1,35 @@
+COMMANDS
+---------------------------------------------------------------------------------------------------------------------------------
+All commands are NOT case sensitive.
+
+Movement         :
+To move around the map, type MOVE, GO, or any similar verb, followed by a cardinal direction (north, south, east, west).
+
+Examining Things :
+To examine things, type EXAMINE, CHECK, or any similar verb, followed by the name of the item or person you'd like to
+look at closer. Items of interest will be marked with asterisks (*).
+To check your inventory, type INVENTORY or simply I. 
+To examine an area, follow the examine verb with AROUND.
+
+Taking Things    : 
+To take things, type TAKE or any similar verb, followed by the name of the item you'd like to take.
+Note that some items cannot be picked up.
+
+Dropping Things  : 
+To drop things, type DROP or any similar verb, followed by the name of the item you'd like to drop from your inventory.
+Key items cannot be dropped.
+
+Dialogue         : 
+When in dialogue, your possible actions will be restricted accordingly. When faced with a choice, select an option by typing
+the corresponding choice's number. Each option will also have its effect on the NPC you're talking with. So, keep that in mind :)
+
+Saving, Loading, Deleting :
+To save your current progress, type SAVE, SAVE GAME, or anything similar. 
+To load a previous save, type LOAD, LOAD GAME, or anything similar.
+To delete a specific save, type DELETE, DELETE GAME, or anything similar.
+
+When saving or loading a game, you'll be prompted to type in your player (folder) name and your save name.
+You can save your game anytime, except for when you're in a dialogue interaction with an NPC.
+
+---------------------------------------------------------------------------------------------------------------------------------
+ENDOFFILE

@@ -1,0 +1,11 @@
+"You're really getting on my nerves now, if I may frankly say so."
+
+"I've heard enough at this point, whatever this important matter is clearly not pressing enough if you're not in hysterics."
+
+"Leave now, I'll say it only once."
+
+You've been kicked out of Edelmar's office. You're now in the West Hallway.
+
+You can now roam the map freely.
+
+ENDOFFILE
