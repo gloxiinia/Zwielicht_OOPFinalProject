@@ -44,7 +44,8 @@ END
 West Restrooms
 4
 -1,0,-1,-1
-The west restrooms. What more is there to say?
+The west restrooms. You can go do your business, wash your hands, or take some *paper towels*.
+What more is there to say?
 
 EXAMINE
 Only exit's back into the hallway.
@@ -79,7 +80,7 @@ END
 Dining Hall
 8
 7,-1,-1,-1
-Communal dining hall. There's the smell of something spicy.
+Communal dining hall. There's the smell of something spicy in the air.
 
 EXAMINE
 You can head back into the hallway by going north.

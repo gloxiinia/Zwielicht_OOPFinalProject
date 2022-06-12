@@ -92,7 +92,7 @@ public class Zwielicht {
             oos.flush();
             oos.close();
             //message to notify the player the save was successful
-            System.out.println("\nYour progress was succesfully saved.");
+            System.out.println("\nYour progress was succesfully saved.\n");
         
         }catch (Exception e){
             //message to notify the player the save failed
@@ -110,7 +110,7 @@ public class Zwielicht {
             game = (AdventureGame) ois.readObject();
             ois.close();
             //message to notify the player the load was successful
-            System.out.println("\nGame successfully loaded.");
+            System.out.println("\nGame successfully loaded.\n");
         
         }catch (Exception e){
             //message to notify the player thata the load failed
@@ -374,11 +374,12 @@ public class Zwielicht {
         showIntro();
         game = new AdventureGame();
         String input;
-        String output = "";
+        String output;
         String checkQuit = "";
         List<String> outputs;
 
         do {
+            output = "";
             System.out.print("> ");
             input = in.readLine();
             outputs = TextParser.processInput(input);

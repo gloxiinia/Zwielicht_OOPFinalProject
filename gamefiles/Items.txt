@@ -74,6 +74,34 @@ A painting of an ancient looking noblewoman. Seems like it's one of Edelmar's an
 She certainly looks like him, anyways. If the green eyes and  didn't give it away, then the 
 insignia on her lapel--bearing the Voigt family coat of arms--clearly do.
 END
+paper towels
+4
+tissue paper,tissue,tissues,tissue papers
+true
+false
+Some regular paper towels. Hoard em, use em, do what you do, no judgement here.
+END
+spoon
+8
+
+true
+false
+A spoon.
+END
+fork
+8
+
+true
+false
+A fork.
+END
+spork
+8
+
+true
+false
+The mighty spork.
+END
 ENDOFFILE
 
 
