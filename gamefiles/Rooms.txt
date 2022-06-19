@@ -29,6 +29,8 @@ A private (debatable) garden connected to Edelmar's office. He grows some intere
 (I think I saw orchids blooming next to an actual corpse flower)
 
 EXAMINE
+There's a particularly arresting *orchid plant*. Further back, somehow grows a *corpse flower*.
+(Hold up, near your feet, there's a *crumpled piece of paper*)
 The only exit here is back into Edel's office.
 END
 Edelmar's Private Quarters
@@ -83,6 +85,10 @@ Dining Hall
 Communal dining hall. There's the smell of something spicy in the air.
 
 EXAMINE
+You can take some *spoons*, *forks*, or even... *sporks*.
+In the corner of your eye, you see something in the far back of the hall.
+There's something small and *hamburger-shaped*. A creature? It seems to only be capable 
+of saying a *certain word* over and over again.
 You can head back into the hallway by going north.
 END
 East Hallway

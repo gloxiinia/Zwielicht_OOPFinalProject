@@ -102,6 +102,40 @@ true
 false
 The mighty spork.
 END
+bunger
+8
+the bunger
+true
+false
+Bunger? Bunger... Bunger Bunger Bunger Bunger.
+Pet the Bunger.
+Cherish the Bunger.
+Forfeit all material possessions to the Bunger.
+END
+crumpled note
+3
+crushed note,rumpled note,crumpled piece of paper
+true
+true
+A crumpled note. Written on it are the words: "deified".
+END
+orchid plant
+3
+orchid,orchid flower
+false
+false
+A lovely (and rare) looking orchid. The colorful patterns on its petals are captivating.
+Wild and exotic in a way something endangered would be.
+END
+corpse flower
+3
+rafflesia,rafflesia arnoldi
+false
+false
+The corpse flower. All-Father, the smell. Really makes you wonder what else lurks in this garden.
+(I for one, am wondering why anyone would want to cultivate this stinking monster of a flower.
+Even for research purposes.)
+END
 ENDOFFILE
 
 
